@@ -50,7 +50,6 @@
             this.buttonL3C = new System.Windows.Forms.Button();
             this.buttonL2C = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textBoxLetter1
@@ -174,6 +173,7 @@
             this.buttonResset.TabIndex = 13;
             this.buttonResset.Text = "Resset";
             this.buttonResset.UseVisualStyleBackColor = true;
+            this.buttonResset.Click += new System.EventHandler(this.buttonResset_Click);
             // 
             // label5
             // 
@@ -247,22 +247,11 @@
             this.label7.TabIndex = 22;
             this.label7.Text = "label7";
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(52, 114);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(433, 13);
-            this.label8.TabIndex = 23;
-            this.label8.Text = "Project not done !! Do not use all 5  green/yellows  or if you use 4 do not use 2" +
-    " or 3 greens";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1055, 594);
-            this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.buttonL2C);
             this.Controls.Add(this.buttonL3C);
@@ -318,7 +307,6 @@
         private System.Windows.Forms.Button buttonL3C;
         private System.Windows.Forms.Button buttonL2C;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
     }
 }
 

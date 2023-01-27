@@ -34,6 +34,7 @@ namespace WindowsFormsApp6
 
         List<Words> words1 = new List<Words>();
         List<Words> wordschecked = new List<Words>();
+        List<char> blacklist = new List<char>();
         public Form1()
         {
             InitializeComponent();
@@ -207,7 +208,30 @@ namespace WindowsFormsApp6
             {
                 temp++;
             }
-          
+
+            if(abc123 == 0)
+            {
+                blacklist.Add(char.Parse(textBoxLetter1.Text));
+            }
+            if (abc1234 == 0)
+            {
+                blacklist.Add(char.Parse(textBoxLetter2.Text));
+            }
+            if (abc1235 == 0)
+            {
+                blacklist.Add(char.Parse(textBoxLetter3.Text));
+            }
+            if (abc1236 == 0)
+            {
+                blacklist.Add(char.Parse(textBoxLetter4.Text));
+            }
+            if (abc1237 == 0)
+            {
+                blacklist.Add(char.Parse(textBoxLetter5.Text));
+            }
+
+
+
             if ( temp == 1)// 1 
                 {
 
@@ -1897,14 +1921,1304 @@ namespace WindowsFormsApp6
                 char character4 = char.Parse(textBoxLetter4.Text);
                 checkerWith1eyellow(character4);
             }
-            //test
+                else if (abc123 == 2 && abc1234 == 2 && abc1235 == 1 && abc1236 == 1)
+                {
+                    char character = char.Parse(textBoxLetter1.Text);
+                    checkerWith1OneGreen(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter2.Text);
+                    checkerWith2OneGreen(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter3.Text);
+                    checkerWith1eyellow(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter4.Text);
+                    checkerWith1eyellow(character4);
+                }
+                else if (abc123 == 2 && abc1234 == 2 && abc1235 == 1 && abc1237 == 1)
+                {
+                    char character = char.Parse(textBoxLetter1.Text);
+                    checkerWith1OneGreen(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter2.Text);
+                    checkerWith2OneGreen(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter3.Text);
+                    checkerWith1eyellow(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter5.Text);
+                    checkerWith1eyellow(character4);
+                }
+                else if (abc123 == 2 && abc1234 == 2 && abc1236 == 1 && abc1237 == 1)
+                {
+                    char character = char.Parse(textBoxLetter1.Text);
+                    checkerWith1OneGreen(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter2.Text);
+                    checkerWith2OneGreen(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter4.Text);
+                    checkerWith1eyellow(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter5.Text);
+                    checkerWith1eyellow(character4);
+                }
+                else if (abc123 == 2 && abc1235 == 2 && abc1234 == 1 && abc1236 == 1)
+                {
+                    char character = char.Parse(textBoxLetter1.Text);
+                    checkerWith1OneGreen(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter3.Text);
+                    checkerWith3OneGreen(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter2.Text);
+                    checkerWith1eyellow(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter4.Text);
+                    checkerWith1eyellow(character4);
+                }
+                else if (abc123 == 2 && abc1235 == 2 && abc1234 == 1 && abc1237 == 1)
+                {
+                    char character = char.Parse(textBoxLetter1.Text);
+                    checkerWith1OneGreen(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter3.Text);
+                    checkerWith3OneGreen(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter2.Text);
+                    checkerWith1eyellow(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter5.Text);
+                    checkerWith1eyellow(character4);
+                }
+                else if (abc123 == 2 && abc1235 == 2 && abc1236 == 1 && abc1237 == 1)
+                {
+                    char character = char.Parse(textBoxLetter1.Text);
+                    checkerWith1OneGreen(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter3.Text);
+                    checkerWith3OneGreen(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter4.Text);
+                    checkerWith1eyellow(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter5.Text);
+                    checkerWith1eyellow(character4);
+                }
+                else if (abc123 == 2 && abc1236 == 2 && abc1235 == 1 && abc1234 == 1)
+                {
+                    char character = char.Parse(textBoxLetter1.Text);
+                    checkerWith1OneGreen(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter4.Text);
+                    checkerWith4OneGreen(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter3.Text);
+                    checkerWith1eyellow(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter2.Text);
+                    checkerWith1eyellow(character4);
+                }
+                else if (abc123 == 2 && abc1236 == 2 && abc1235 == 1 && abc1237 == 1)
+                {
+                    char character = char.Parse(textBoxLetter1.Text);
+                    checkerWith1OneGreen(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter4.Text);
+                    checkerWith4OneGreen(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter3.Text);
+                    checkerWith1eyellow(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter5.Text);
+                    checkerWith1eyellow(character4);
+                }
+                else if (abc123 == 2 && abc1236 == 2 && abc1234 == 1 && abc1237 == 1)
+                {
+                    char character = char.Parse(textBoxLetter1.Text);
+                    checkerWith1OneGreen(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter4.Text);
+                    checkerWith4OneGreen(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter2.Text);
+                    checkerWith1eyellow(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter5.Text);
+                    checkerWith1eyellow(character4);
+                }
+                else if (abc123 == 2 && abc1237 == 2 && abc1235 == 1 && abc1234 == 1)
+                {
+                    char character = char.Parse(textBoxLetter1.Text);
+                    checkerWith1OneGreen(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter5.Text);
+                    checkerWith5OneGreen(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter3.Text);
+                    checkerWith1eyellow(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter2.Text);
+                    checkerWith1eyellow(character4);
+                }
+                else if (abc123 == 2 && abc1237 == 2 && abc1235 == 1 && abc1236 == 1)
+                {
+                    char character = char.Parse(textBoxLetter1.Text);
+                    checkerWith1OneGreen(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter5.Text);
+                    checkerWith5OneGreen(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter3.Text);
+                    checkerWith1eyellow(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter4.Text);
+                    checkerWith1eyellow(character4);
+                }
+                else if (abc123 == 2 && abc1237 == 2 && abc1234 == 1 && abc1236 == 1)
+                {
+                    char character = char.Parse(textBoxLetter1.Text);
+                    checkerWith1OneGreen(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter5.Text);
+                    checkerWith5OneGreen(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter2.Text);
+                    checkerWith1eyellow(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter4.Text);
+                    checkerWith1eyellow(character4);
+                }
+                else if (abc1234 == 2 && abc1235 == 2 && abc123 == 1 && abc1236 == 1)
+                {
+                    char character = char.Parse(textBoxLetter2.Text);
+                    checkerWith2OneGreen(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter3.Text);
+                    checkerWith3OneGreen(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter1.Text);
+                    checkerWith1eyellow(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter4.Text);
+                    checkerWith1eyellow(character4);
+                }
+                else if (abc1234 == 2 && abc1235 == 2 && abc123 == 1 && abc1237 == 1)
+                {
+                    char character = char.Parse(textBoxLetter2.Text);
+                    checkerWith2OneGreen(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter3.Text);
+                    checkerWith3OneGreen(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter1.Text);
+                    checkerWith1eyellow(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter5.Text);
+                    checkerWith1eyellow(character4);
+                }
+                else if (abc1234 == 2 && abc1235 == 2 && abc1236 == 1 && abc1237 == 1)
+                {
+                    char character = char.Parse(textBoxLetter2.Text);
+                    checkerWith2OneGreen(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter3.Text);
+                    checkerWith3OneGreen(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter4.Text);
+                    checkerWith1eyellow(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter5.Text);
+                    checkerWith1eyellow(character4);
+                }
+                else if (abc1234 == 2 && abc1236 == 2 && abc123 == 1 && abc1237 == 1)
+                {
+                    char character = char.Parse(textBoxLetter2.Text);
+                    checkerWith2OneGreen(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter4.Text);
+                    checkerWith4OneGreen(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter1.Text);
+                    checkerWith1eyellow(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter5.Text);
+                    checkerWith1eyellow(character4);
+                }
+                else if (abc1234 == 2 && abc1236 == 2 && abc123 == 1 && abc1235 == 1)
+                {
+                    char character = char.Parse(textBoxLetter2.Text);
+                    checkerWith2OneGreen(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter4.Text);
+                    checkerWith4OneGreen(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter1.Text);
+                    checkerWith1eyellow(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter3.Text);
+                    checkerWith1eyellow(character4);
+                }
+                else if (abc1234 == 2 && abc1236 == 2 && abc1237 == 1 && abc1235 == 1)
+                {
+                    char character = char.Parse(textBoxLetter2.Text);
+                    checkerWith2OneGreen(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter4.Text);
+                    checkerWith4OneGreen(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter5.Text);
+                    checkerWith1eyellow(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter3.Text);
+                    checkerWith1eyellow(character4);
+                }
+                else if (abc1234 == 2 && abc1237 == 2 && abc123 == 1 && abc1235 == 1)
+                {
+                    char character = char.Parse(textBoxLetter2.Text);
+                    checkerWith2OneGreen(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter5.Text);
+                    checkerWith5OneGreen(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter1.Text);
+                    checkerWith1eyellow(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter3.Text);
+                    checkerWith1eyellow(character4);
+                }
+                else if (abc1234 == 2 && abc1237 == 2 && abc123 == 1 && abc1236 == 1)
+                {
+                    char character = char.Parse(textBoxLetter2.Text);
+                    checkerWith2OneGreen(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter5.Text);
+                    checkerWith5OneGreen(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter1.Text);
+                    checkerWith1eyellow(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter4.Text);
+                    checkerWith1eyellow(character4);
+                }
+                else if (abc1234 == 2 && abc1237 == 2 && abc1235 == 1 && abc1236 == 1)
+                {
+                    char character = char.Parse(textBoxLetter2.Text);
+                    checkerWith2OneGreen(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter5.Text);
+                    checkerWith5OneGreen(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter3.Text);
+                    checkerWith1eyellow(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter4.Text);
+                    checkerWith1eyellow(character4);
+                }
+                else if (abc1235 == 2 && abc1237 == 2 && abc123 == 1 && abc1234 == 1)
+                {
+                    char character = char.Parse(textBoxLetter3.Text);
+                    checkerWith3OneGreen(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter5.Text);
+                    checkerWith5OneGreen(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter1.Text);
+                    checkerWith1eyellow(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter2.Text);
+                    checkerWith1eyellow(character4);
+                }
+                else if (abc1235 == 2 && abc1237 == 2 && abc123 == 1 && abc1236 == 1)
+                {
+                    char character = char.Parse(textBoxLetter3.Text);
+                    checkerWith3OneGreen(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter5.Text);
+                    checkerWith5OneGreen(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter1.Text);
+                    checkerWith1eyellow(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter4.Text);
+                    checkerWith1eyellow(character4);
+                }
+                else if (abc1235 == 2 && abc1237 == 2 && abc1234 == 1 && abc1236 == 1)
+                {
+                    char character = char.Parse(textBoxLetter3.Text);
+                    checkerWith3OneGreen(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter5.Text);
+                    checkerWith5OneGreen(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter2.Text);
+                    checkerWith1eyellow(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter4.Text);
+                    checkerWith1eyellow(character4);
+                }
+                else if (abc1235 == 2 && abc1236 == 2 && abc123 == 1 && abc1234 == 1)
+                {
+                    char character = char.Parse(textBoxLetter3.Text);
+                    checkerWith3OneGreen(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter4.Text);
+                    checkerWith4OneGreen(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter1.Text);
+                    checkerWith1eyellow(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter2.Text);
+                    checkerWith1eyellow(character4);
+                }
+                else if (abc1235 == 2 && abc1236 == 2 && abc123 == 1 && abc1237 == 1)
+                {
+                    char character = char.Parse(textBoxLetter3.Text);
+                    checkerWith3OneGreen(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter4.Text);
+                    checkerWith4OneGreen(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter1.Text);
+                    checkerWith1eyellow(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter5.Text);
+                    checkerWith1eyellow(character4);
+                }
+                else if (abc1235 == 2 && abc1236 == 2 && abc1234 == 1 && abc1237 == 1)
+                {
+                    char character = char.Parse(textBoxLetter3.Text);
+                    checkerWith3OneGreen(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter4.Text);
+                    checkerWith4OneGreen(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter2.Text);
+                    checkerWith1eyellow(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter5.Text);
+                    checkerWith1eyellow(character4);
+                }
+                else if (abc1236 == 2 && abc1237 == 2 && abc123 == 1 && abc1234 == 1)
+                {
+                    char character = char.Parse(textBoxLetter4.Text);
+                    checkerWith4OneGreen(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter5.Text);
+                    checkerWith5OneGreen(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter1.Text);
+                    checkerWith1eyellow(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter2.Text);
+                    checkerWith1eyellow(character4);
+                }
+                else if (abc1236 == 2 && abc1237 == 2 && abc123 == 1 && abc1235 == 1)
+                {
+                    char character = char.Parse(textBoxLetter4.Text);
+                    checkerWith4OneGreen(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter5.Text);
+                    checkerWith5OneGreen(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter1.Text);
+                    checkerWith1eyellow(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter3.Text);
+                    checkerWith1eyellow(character4);
+                }
+                else if (abc1236 == 2 && abc1237 == 2 && abc1234 == 1 && abc1235 == 1)
+                {
+                    char character = char.Parse(textBoxLetter4.Text);
+                    checkerWith4OneGreen(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter5.Text);
+                    checkerWith5OneGreen(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter2.Text);
+                    checkerWith1eyellow(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter3.Text);
+                    checkerWith1eyellow(character4);
+                }
+                else if (abc123 == 2 && abc1234 == 2 && abc1235 == 1 && abc1236 == 1)
+                {
+                    char character = char.Parse(textBoxLetter1.Text);
+                    checkerWith1OneGreen(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter2.Text);
+                    checkerWith2OneGreen(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter3.Text);
+                    checkerWith3OneGreen(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter4.Text);
+                    checkerWith1eyellow(character4);
+                }
+                else if (abc123 == 2 && abc1234 == 2 && abc1235 == 1 && abc1236 == 1)
+                {
+                    char character = char.Parse(textBoxLetter1.Text);
+                    checkerWith1OneGreen(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter2.Text);
+                    checkerWith2OneGreen(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter3.Text);
+                    checkerWith3OneGreen(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter4.Text);
+                    checkerWith1eyellow(character4);
+                }
+                else if (abc123 == 2 && abc1234 == 2 && abc1235 == 1 && abc1237 == 1)
+                {
+                    char character = char.Parse(textBoxLetter1.Text);
+                    checkerWith1OneGreen(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter2.Text);
+                    checkerWith2OneGreen(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter3.Text);
+                    checkerWith3OneGreen(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter5.Text);
+                    checkerWith1eyellow(character4);
+                }
+                else if (abc123 == 2 && abc1234 == 2 && abc1236 == 1 && abc1235 == 1)
+                {
+                    char character = char.Parse(textBoxLetter1.Text);
+                    checkerWith1OneGreen(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter2.Text);
+                    checkerWith2OneGreen(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter4.Text);
+                    checkerWith4OneGreen(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter3.Text);
+                    checkerWith1eyellow(character4);
+                }
+                else if (abc123 == 2 && abc1234 == 2 && abc1236 == 1 && abc1237 == 1)
+                {
+                    char character = char.Parse(textBoxLetter1.Text);
+                    checkerWith1OneGreen(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter2.Text);
+                    checkerWith2OneGreen(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter4.Text);
+                    checkerWith4OneGreen(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter5.Text);
+                    checkerWith1eyellow(character4);
+                }
+                else if (abc123 == 2 && abc1234 == 2 && abc1237 == 1 && abc1236 == 1)
+                {
+                    char character = char.Parse(textBoxLetter1.Text);
+                    checkerWith1OneGreen(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter2.Text);
+                    checkerWith2OneGreen(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter5.Text);
+                    checkerWith5OneGreen(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter4.Text);
+                    checkerWith1eyellow(character4);
+                }
+                else if (abc123 == 2 && abc1234 == 2 && abc1237 == 1 && abc1235 == 1)
+                {
+                    char character = char.Parse(textBoxLetter1.Text);
+                    checkerWith1OneGreen(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter2.Text);
+                    checkerWith2OneGreen(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter5.Text);
+                    checkerWith5OneGreen(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter3.Text);
+                    checkerWith1eyellow(character4);
+                }
+                else if (abc123 == 2 && abc1235 == 2 && abc1236 == 1 && abc1237 == 1)
+                {
+                    char character = char.Parse(textBoxLetter1.Text);
+                    checkerWith1OneGreen(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter3.Text);
+                    checkerWith3OneGreen(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter4.Text);
+                    checkerWith4OneGreen(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter5.Text);
+                    checkerWith1eyellow(character4);
+                }
+                else if (abc123 == 2 && abc1235 == 2 && abc1236 == 1 && abc1234 == 1)
+                {
+                    char character = char.Parse(textBoxLetter1.Text);
+                    checkerWith1OneGreen(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter3.Text);
+                    checkerWith3OneGreen(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter4.Text);
+                    checkerWith4OneGreen(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter2.Text);
+                    checkerWith1eyellow(character4);
+                }
+                else if (abc123 == 2 && abc1235 == 2 && abc1237 == 1 && abc1234 == 1)
+                {
+                    char character = char.Parse(textBoxLetter1.Text);
+                    checkerWith1OneGreen(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter3.Text);
+                    checkerWith3OneGreen(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter5.Text);
+                    checkerWith5OneGreen(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter2.Text);
+                    checkerWith1eyellow(character4);
+                }
+                else if (abc123 == 2 && abc1235 == 2 && abc1237 == 1 && abc1236 == 1)
+                {
+                    char character = char.Parse(textBoxLetter1.Text);
+                    checkerWith1OneGreen(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter3.Text);
+                    checkerWith3OneGreen(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter5.Text);
+                    checkerWith5OneGreen(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter4.Text);
+                    checkerWith1eyellow(character4);
+                }
+                else if (abc123 == 2 && abc1236 == 2 && abc1237 == 1 && abc1235 == 1)
+                {
+                    char character = char.Parse(textBoxLetter1.Text);
+                    checkerWith1OneGreen(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter4.Text);
+                    checkerWith4OneGreen(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter5.Text);
+                    checkerWith5OneGreen(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter3.Text);
+                    checkerWith1eyellow(character4);
+                }
+                else if (abc123 == 2 && abc1236 == 2 && abc1237 == 1 && abc1234 == 1)
+                {
+                    char character = char.Parse(textBoxLetter1.Text);
+                    checkerWith1OneGreen(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter4.Text);
+                    checkerWith4OneGreen(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter5.Text);
+                    checkerWith5OneGreen(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter2.Text);
+                    checkerWith1eyellow(character4);
+                }
+                else if (abc123 == 2 && abc1236 == 2 && abc1237 == 1 && abc1234 == 1)
+                {
+                    char character = char.Parse(textBoxLetter1.Text);
+                    checkerWith1OneGreen(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter4.Text);
+                    checkerWith4OneGreen(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter5.Text);
+                    checkerWith5OneGreen(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter2.Text);
+                    checkerWith1eyellow(character4);
+                }
+                else if (abc1234 == 2 && abc1235 == 2 && abc1236 == 1 && abc123 == 1)
+                {
+                    char character = char.Parse(textBoxLetter2.Text);
+                    checkerWith2OneGreen(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter3.Text);
+                    checkerWith3OneGreen(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter4.Text);
+                    checkerWith4OneGreen(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter1.Text);
+                    checkerWith1eyellow(character4);
+                }
+                else if (abc1234 == 2 && abc1235 == 2 && abc1236 == 1 && abc1237 == 1)
+                {
+                    char character = char.Parse(textBoxLetter2.Text);
+                    checkerWith2OneGreen(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter3.Text);
+                    checkerWith3OneGreen(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter4.Text);
+                    checkerWith4OneGreen(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter5.Text);
+                    checkerWith1eyellow(character4);
+                }
+                else if (abc1234 == 2 && abc1235 == 2 && abc1237 == 1 && abc1236 == 1)
+                {
+                    char character = char.Parse(textBoxLetter2.Text);
+                    checkerWith2OneGreen(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter3.Text);
+                    checkerWith3OneGreen(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter5.Text);
+                    checkerWith5OneGreen(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter4.Text);
+                    checkerWith1eyellow(character4);
+                }
+                else if (abc1234 == 2 && abc1235 == 2 && abc1237 == 1 && abc123 == 1)
+                {
+                    char character = char.Parse(textBoxLetter2.Text);
+                    checkerWith2OneGreen(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter3.Text);
+                    checkerWith3OneGreen(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter5.Text);
+                    checkerWith5OneGreen(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter1.Text);
+                    checkerWith1eyellow(character4);
+                }
+                else if (abc1234 == 2 && abc1236 == 2 && abc1237 == 1 && abc123 == 1)
+                {
+                    char character = char.Parse(textBoxLetter2.Text);
+                    checkerWith2OneGreen(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter4.Text);
+                    checkerWith4OneGreen(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter5.Text);
+                    checkerWith5OneGreen(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter1.Text);
+                    checkerWith1eyellow(character4);
+                }
+                else if (abc1234 == 2 && abc1236 == 2 && abc1237 == 1 && abc1235 == 1)
+                {
+                    char character = char.Parse(textBoxLetter2.Text);
+                    checkerWith2OneGreen(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter4.Text);
+                    checkerWith4OneGreen(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter5.Text);
+                    checkerWith5OneGreen(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter3.Text);
+                    checkerWith1eyellow(character4);
+                }
+                else if (abc1235 == 2 && abc1236 == 2 && abc1237 == 1 && abc123 == 1)
+                {
+                    char character = char.Parse(textBoxLetter3.Text);
+                    checkerWith3OneGreen(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter4.Text);
+                    checkerWith4OneGreen(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter5.Text);
+                    checkerWith5OneGreen(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter1.Text);
+                    checkerWith1eyellow(character4);
+                }
+                else if (abc1235 == 2 && abc1236 == 2 && abc1237 == 1 && abc1234 == 1)
+                {
+                    char character = char.Parse(textBoxLetter3.Text);
+                    checkerWith3OneGreen(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter4.Text);
+                    checkerWith4OneGreen(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter5.Text);
+                    checkerWith5OneGreen(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter2.Text);
+                    checkerWith1eyellow(character4);
+                }
+
+
+
+            }
+
+            if(temp == 5)
+            {
+                if(abc123 == 2 && abc1234 == 2 && abc1235 == 2 && abc1236 ==2 && abc1237 ==2 )
+                {
+                        char character = char.Parse(textBoxLetter1.Text);
+                        checkerWith1OneGreen(character);
+                        resetwords();
+                        char character2 = char.Parse(textBoxLetter2.Text);
+                        checkerWith2OneGreen(character2);
+                        resetwords();
+                        char character3 = char.Parse(textBoxLetter3.Text);
+                        checkerWith3OneGreen(character3);
+                        resetwords();
+                        char character4 = char.Parse(textBoxLetter4.Text);
+                        checkerWith4OneGreen(character4);
+                        resetwords();
+                        char character5 = char.Parse(textBoxLetter5.Text);
+                        checkerWith5OneGreen(character5); 
+                }
+                if (abc123 == 1 && abc1234 == 1 && abc1235 == 1 && abc1236 == 1 && abc1237 == 1)
+                {
+                    char character = char.Parse(textBoxLetter1.Text);
+                    checkerWith1eyellow(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter2.Text);
+                    checkerWith1eyellow(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter3.Text);
+                    checkerWith1eyellow(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter4.Text);
+                    checkerWith1eyellow(character4);
+                    resetwords();
+                    char character5 = char.Parse(textBoxLetter5.Text);
+                    checkerWith1eyellow(character5);
+                }
+                if(abc123 == 2 && abc1234 == 1 && abc1235 == 1 && abc1236 == 1 && abc1237 == 1)
+                {
+                    char character = char.Parse(textBoxLetter1.Text);
+                    checkerWith1OneGreen(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter2.Text);
+                    checkerWith1eyellow(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter3.Text);
+                    checkerWith1eyellow(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter4.Text);
+                    checkerWith1eyellow(character4);
+                    resetwords();
+                    char character5 = char.Parse(textBoxLetter5.Text);
+                    checkerWith1eyellow(character5);
+                }
+                if (abc123 == 1 && abc1234 == 2 && abc1235 == 1 && abc1236 == 1 && abc1237 == 1)
+                {
+                    char character = char.Parse(textBoxLetter1.Text);
+                    checkerWith1eyellow(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter2.Text);
+                    checkerWith2OneGreen(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter3.Text);
+                    checkerWith1eyellow(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter4.Text);
+                    checkerWith1eyellow(character4);
+                    resetwords();
+                    char character5 = char.Parse(textBoxLetter5.Text);
+                    checkerWith1eyellow(character5);
+                }
+                if (abc123 == 1 && abc1234 == 1 && abc1235 == 2 && abc1236 == 1 && abc1237 == 1)
+                {
+                    char character = char.Parse(textBoxLetter1.Text);
+                    checkerWith1eyellow(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter2.Text);
+                    checkerWith1eyellow(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter3.Text);
+                    checkerWith3OneGreen(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter4.Text);
+                    checkerWith1eyellow(character4);
+                    resetwords();
+                    char character5 = char.Parse(textBoxLetter5.Text);
+                    checkerWith1eyellow(character5);
+                }
+                if (abc123 == 1 && abc1234 == 1 && abc1235 == 1 && abc1236 == 2 && abc1237 == 1)
+                {
+                    char character = char.Parse(textBoxLetter1.Text);
+                    checkerWith1eyellow(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter2.Text);
+                    checkerWith1eyellow(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter3.Text);
+                    checkerWith1eyellow(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter4.Text);
+                    checkerWith4OneGreen(character4);
+                    resetwords();
+                    char character5 = char.Parse(textBoxLetter5.Text);
+                    checkerWith1eyellow(character5);
+                }
+                if (abc123 == 1 && abc1234 == 1 && abc1235 == 1 && abc1236 == 1 && abc1237 == 2)
+                {
+                    char character = char.Parse(textBoxLetter1.Text);
+                    checkerWith1eyellow(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter2.Text);
+                    checkerWith1eyellow(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter3.Text);
+                    checkerWith1eyellow(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter4.Text);
+                    checkerWith1eyellow(character4);
+                    resetwords();
+                    char character5 = char.Parse(textBoxLetter5.Text);
+                   checkerWith5OneGreen(character5);
+                }
+                if (abc123 == 2 && abc1234 == 2 && abc1235 == 1 && abc1236 == 1 && abc1237 == 1)
+                {
+                    char character = char.Parse(textBoxLetter1.Text);
+                    checkerWith1OneGreen(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter2.Text);
+                    checkerWith2OneGreen(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter3.Text);
+                    checkerWith1eyellow(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter4.Text);
+                    checkerWith1eyellow(character4);
+                    resetwords();
+                    char character5 = char.Parse(textBoxLetter5.Text);
+                    checkerWith1eyellow(character5);
+                }
+                if (abc123 == 2 && abc1234 == 1 && abc1235 == 2 && abc1236 == 1 && abc1237 == 1)
+                {
+                    char character = char.Parse(textBoxLetter1.Text);
+                    checkerWith1OneGreen(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter2.Text);
+                    checkerWith1eyellow(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter3.Text);
+                    checkerWith3OneGreen(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter4.Text);
+                    checkerWith1eyellow(character4);
+                    resetwords();
+                    char character5 = char.Parse(textBoxLetter5.Text);
+                    checkerWith1eyellow(character5);
+                }
+                if (abc123 == 2 && abc1234 == 1 && abc1235 == 1 && abc1236 == 2 && abc1237 == 1)
+                {
+                    char character = char.Parse(textBoxLetter1.Text);
+                    checkerWith1OneGreen(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter2.Text);
+                    checkerWith1eyellow(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter3.Text);
+                    checkerWith1eyellow(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter4.Text);
+                    checkerWith4OneGreen(character4);
+                    resetwords();
+                    char character5 = char.Parse(textBoxLetter5.Text);
+                    checkerWith1eyellow(character5);
+                }
+                if (abc123 == 2 && abc1234 == 1 && abc1235 == 1 && abc1236 == 1 && abc1237 == 2)
+                {
+                    char character = char.Parse(textBoxLetter1.Text);
+                    checkerWith1OneGreen(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter2.Text);
+                    checkerWith1eyellow(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter3.Text);
+                    checkerWith1eyellow(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter4.Text);
+                    checkerWith1eyellow(character4);
+                    resetwords();
+                    char character5 = char.Parse(textBoxLetter5.Text);
+                    checkerWith5OneGreen(character5);
+                }
+                if (abc123 == 1 && abc1234 == 2 && abc1235 == 2 && abc1236 == 1 && abc1237 == 1)
+                {
+                    char character = char.Parse(textBoxLetter1.Text);
+                    checkerWith1eyellow(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter2.Text);
+                    checkerWith2OneGreen(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter3.Text);
+                    checkerWith3OneGreen(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter4.Text);
+                    checkerWith1eyellow(character4);
+                    resetwords();
+                    char character5 = char.Parse(textBoxLetter5.Text);
+                    checkerWith1eyellow(character5);
+                }
+                if (abc123 == 1 && abc1234 == 2 && abc1235 == 1 && abc1236 == 2 && abc1237 == 1)
+                {
+                    char character = char.Parse(textBoxLetter1.Text);
+                    checkerWith1eyellow(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter2.Text);
+                    checkerWith2OneGreen(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter3.Text);
+                    checkerWith1eyellow(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter4.Text);
+                    checkerWith4OneGreen(character4);
+                    resetwords();
+                    char character5 = char.Parse(textBoxLetter5.Text);
+                    checkerWith1eyellow(character5);
+                }
+                if (abc123 == 1 && abc1234 == 2 && abc1235 == 1 && abc1236 == 1 && abc1237 == 2)
+                {
+                    char character = char.Parse(textBoxLetter1.Text);
+                    checkerWith1eyellow(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter2.Text);
+                    checkerWith2OneGreen(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter3.Text);
+                    checkerWith1eyellow(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter4.Text);
+                    checkerWith1eyellow(character4);
+                    resetwords();
+                    char character5 = char.Parse(textBoxLetter5.Text);
+                    checkerWith5OneGreen(character5);
+                }
+                if (abc123 == 1 && abc1234 == 1 && abc1235 == 2 && abc1236 == 1 && abc1237 == 2)
+                {
+                    char character = char.Parse(textBoxLetter1.Text);
+                    checkerWith1eyellow(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter2.Text);
+                    checkerWith1eyellow(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter3.Text);
+                    checkerWith3OneGreen(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter4.Text);
+                    checkerWith1eyellow(character4);
+                    resetwords();
+                    char character5 = char.Parse(textBoxLetter5.Text);
+                    checkerWith5OneGreen(character5);
+                }
+                if (abc123 == 1 && abc1234 == 1 && abc1235 == 2 && abc1236 == 2 && abc1237 == 1)
+                {
+                    char character = char.Parse(textBoxLetter1.Text);
+                    checkerWith1eyellow(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter2.Text);
+                    checkerWith1eyellow(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter3.Text);
+                    checkerWith3OneGreen(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter4.Text);
+                    checkerWith4OneGreen(character4);
+                    resetwords();
+                    char character5 = char.Parse(textBoxLetter5.Text);
+                    checkerWith1eyellow(character5);
+                }
+                if (abc123 == 1 && abc1234 == 1 && abc1235 == 1 && abc1236 == 2 && abc1237 == 2)
+                {
+                    char character = char.Parse(textBoxLetter1.Text);
+                    checkerWith1eyellow(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter2.Text);
+                    checkerWith1eyellow(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter3.Text);
+                    checkerWith1eyellow(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter4.Text);
+                    checkerWith4OneGreen(character4);
+                    resetwords();
+                    char character5 = char.Parse(textBoxLetter5.Text);
+                    checkerWith5OneGreen(character5);
+                }
+                if (abc123 == 2 && abc1234 == 2 && abc1235 == 2 && abc1236 == 1 && abc1237 == 1)
+                {
+                    char character = char.Parse(textBoxLetter1.Text);
+                    checkerWith1OneGreen(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter2.Text);
+                    checkerWith2OneGreen(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter3.Text);
+                    checkerWith3OneGreen(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter4.Text);
+                    checkerWith1eyellow(character4);
+                    resetwords();
+                    char character5 = char.Parse(textBoxLetter5.Text);
+                    checkerWith1eyellow(character5);
+                }
+                if (abc123 == 2 && abc1234 == 2 && abc1235 == 1 && abc1236 == 2 && abc1237 == 1)
+                {
+                    char character = char.Parse(textBoxLetter1.Text);
+                    checkerWith1OneGreen(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter2.Text);
+                    checkerWith2OneGreen(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter3.Text);
+                    checkerWith1eyellow(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter4.Text);
+                    checkerWith4OneGreen(character4);
+                    resetwords();
+                    char character5 = char.Parse(textBoxLetter5.Text);
+                    checkerWith1eyellow(character5);
+                }
+                if (abc123 == 2 && abc1234 == 2 && abc1235 == 1 && abc1236 == 1 && abc1237 == 2)
+                {
+                    char character = char.Parse(textBoxLetter1.Text);
+                    checkerWith1OneGreen(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter2.Text);
+                    checkerWith2OneGreen(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter3.Text);
+                    checkerWith1eyellow(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter4.Text);
+                    checkerWith1eyellow(character4);
+                    resetwords();
+                    char character5 = char.Parse(textBoxLetter5.Text);
+                    checkerWith5OneGreen(character5);
+                }
+                if (abc123 == 2 && abc1234 == 1 && abc1235 == 2 && abc1236 == 2 && abc1237 == 1)
+                {
+                    char character = char.Parse(textBoxLetter1.Text);
+                    checkerWith1OneGreen(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter2.Text);
+                    checkerWith1eyellow(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter3.Text);
+                    checkerWith3OneGreen(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter4.Text);
+                    checkerWith4OneGreen(character4);
+                    resetwords();
+                    char character5 = char.Parse(textBoxLetter5.Text);
+                    checkerWith1eyellow(character5);
+                }
+                if (abc123 == 2 && abc1234 == 1 && abc1235 == 2 && abc1236 == 1 && abc1237 == 2)
+                {
+                    char character = char.Parse(textBoxLetter1.Text);
+                    checkerWith1OneGreen(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter2.Text);
+                    checkerWith1eyellow(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter3.Text);
+                    checkerWith3OneGreen(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter4.Text);
+                    checkerWith1eyellow(character4);
+                    resetwords();
+                    char character5 = char.Parse(textBoxLetter5.Text);
+                    checkerWith5OneGreen(character5);
+                }
+                if (abc123 == 2 && abc1234 == 1 && abc1235 == 1 && abc1236 == 2 && abc1237 == 2)
+                {
+                    char character = char.Parse(textBoxLetter1.Text);
+                    checkerWith1OneGreen(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter2.Text);
+                    checkerWith1eyellow(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter3.Text);
+                    checkerWith1eyellow(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter4.Text);
+                    checkerWith4OneGreen(character4);
+                    resetwords();
+                    char character5 = char.Parse(textBoxLetter5.Text);
+                    checkerWith5OneGreen(character5);
+                }
+                if (abc123 == 1 && abc1234 == 2 && abc1235 == 2 && abc1236 == 1 && abc1237 == 2)
+                {
+                    char character = char.Parse(textBoxLetter1.Text);
+                    checkerWith1eyellow(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter2.Text);
+                    checkerWith2OneGreen(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter3.Text);
+                    checkerWith3OneGreen(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter4.Text);
+                    checkerWith1eyellow(character4);
+                    resetwords();
+                    char character5 = char.Parse(textBoxLetter5.Text);
+                    checkerWith5OneGreen(character5);
+                }
+                if (abc123 == 1 && abc1234 == 2 && abc1235 == 2 && abc1236 == 2 && abc1237 == 1)
+                {
+                    char character = char.Parse(textBoxLetter1.Text);
+                    checkerWith1eyellow(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter2.Text);
+                    checkerWith2OneGreen(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter3.Text);
+                    checkerWith3OneGreen(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter4.Text);
+                    checkerWith4OneGreen(character4);
+                    resetwords();
+                    char character5 = char.Parse(textBoxLetter5.Text);
+                    checkerWith1eyellow(character5);
+                }
+                if (abc123 == 1 && abc1234 == 2 && abc1235 == 1 && abc1236 == 2 && abc1237 == 2)
+                {
+                    char character = char.Parse(textBoxLetter1.Text);
+                    checkerWith1eyellow(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter2.Text);
+                    checkerWith2OneGreen(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter3.Text);
+                    checkerWith1eyellow(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter4.Text);
+                    checkerWith4OneGreen(character4);
+                    resetwords();
+                    char character5 = char.Parse(textBoxLetter5.Text);
+                    checkerWith5OneGreen(character5);
+                }
+                if (abc123 == 1 && abc1234 == 1 && abc1235 == 2 && abc1236 == 2 && abc1237 == 2)
+                {
+                    char character = char.Parse(textBoxLetter1.Text);
+                    checkerWith1eyellow(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter2.Text);
+                    checkerWith1eyellow(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter3.Text);
+                    checkerWith3OneGreen(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter4.Text);
+                    checkerWith4OneGreen(character4);
+                    resetwords();
+                    char character5 = char.Parse(textBoxLetter5.Text);
+                    checkerWith5OneGreen(character5);
+                }
+                if (abc123 == 2 && abc1234 == 2 && abc1235 == 2 && abc1236 == 2 && abc1237 == 1)
+                {
+                    char character = char.Parse(textBoxLetter1.Text);
+                    checkerWith1OneGreen(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter2.Text);
+                    checkerWith2OneGreen(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter3.Text);
+                    checkerWith3OneGreen(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter4.Text);
+                    checkerWith4OneGreen(character4);
+                    resetwords();
+                    char character5 = char.Parse(textBoxLetter5.Text);
+                    checkerWith1eyellow(character5);
+                }
+                if (abc123 == 2 && abc1234 == 2 && abc1235 == 2 && abc1236 == 1 && abc1237 == 2)
+                {
+                    char character = char.Parse(textBoxLetter1.Text);
+                    checkerWith1OneGreen(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter2.Text);
+                    checkerWith2OneGreen(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter3.Text);
+                    checkerWith3OneGreen(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter4.Text);
+                    checkerWith1eyellow(character4);
+                    resetwords();
+                    char character5 = char.Parse(textBoxLetter5.Text);
+                    checkerWith5OneGreen(character5);
+                }
+                if (abc123 == 2 && abc1234 == 2 && abc1235 == 1 && abc1236 == 2 && abc1237 == 2)
+                {
+                    char character = char.Parse(textBoxLetter1.Text);
+                    checkerWith1OneGreen(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter2.Text);
+                    checkerWith2OneGreen(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter3.Text);
+                    checkerWith1eyellow(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter4.Text);
+                    checkerWith4OneGreen(character4);
+                    resetwords();
+                    char character5 = char.Parse(textBoxLetter5.Text);
+                    checkerWith5OneGreen(character5);
+                }
+                if (abc123 == 2 && abc1234 == 1 && abc1235 == 2 && abc1236 == 2 && abc1237 == 2)
+                {
+                    char character = char.Parse(textBoxLetter1.Text);
+                    checkerWith1OneGreen(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter2.Text);
+                    checkerWith1eyellow(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter3.Text);
+                    checkerWith3OneGreen(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter4.Text);
+                    checkerWith4OneGreen(character4);
+                    resetwords();
+                    char character5 = char.Parse(textBoxLetter5.Text);
+                    checkerWith5OneGreen(character5);
+                }
+                if (abc123 == 1 && abc1234 == 2 && abc1235 == 2 && abc1236 == 2 && abc1237 == 2)
+                {
+                    char character = char.Parse(textBoxLetter1.Text);
+                   checkerWith1eyellow(character);
+                    resetwords();
+                    char character2 = char.Parse(textBoxLetter2.Text);
+                    checkerWith2OneGreen(character2);
+                    resetwords();
+                    char character3 = char.Parse(textBoxLetter3.Text);
+                    checkerWith3OneGreen(character3);
+                    resetwords();
+                    char character4 = char.Parse(textBoxLetter4.Text);
+                    checkerWith4OneGreen(character4);
+                    resetwords();
+                    char character5 = char.Parse(textBoxLetter5.Text);
+                    checkerWith5OneGreen(character5);
+                }
+
+
+
+
             }
 
 
 
-
-
-
+            for(int i =0; i<wordschecked.Count; i++)
+            {
+                for(int j =0; j<blacklist.Count; j++)
+                {
+                    if (blacklist[j] == wordschecked[i].L1 || blacklist[j] == wordschecked[i].L2 || blacklist[j] == wordschecked[i].L3 || blacklist[j] == wordschecked[i].L4 || blacklist[j] == wordschecked[i].L5)
+                    {
+                   wordschecked.Remove(wordschecked[i]);
+                        
+                    }
+                }
+            }
 
 
 
@@ -2001,6 +3315,10 @@ namespace WindowsFormsApp6
 
             }
         }
-       
+
+        private void buttonResset_Click(object sender, EventArgs e)
+        {
+            Application.Restart();
+        }
     }
 }
