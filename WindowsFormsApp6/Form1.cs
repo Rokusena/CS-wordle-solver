@@ -1897,7 +1897,7 @@ namespace WindowsFormsApp6
                 char character4 = char.Parse(textBoxLetter4.Text);
                 checkerWith1eyellow(character4);
             }
-
+            //test
             }
 
 
